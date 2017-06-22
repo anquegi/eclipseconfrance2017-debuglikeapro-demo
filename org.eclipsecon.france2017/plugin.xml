@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.jdt.debug.javaLogicalStructures">
+      <javaLogicalStructure
+            description="User logical structure (from ext point)"
+            subtypes="true"
+            type="org.eclipsecon.france2017.debuglikeapro.User">
+         <variable
+               name="name"
+               value="return getName();">
+         </variable>
+         <variable
+               name="age"
+               value="return getAge();">
+         </variable>
+         <variable
+               name="travelling"
+               value="return isTravelling();">
+         </variable>
+         <variable
+               name="boss"
+               value="return isBoss();">
+         </variable>
+      </javaLogicalStructure>
+   </extension>
+
+</plugin>
